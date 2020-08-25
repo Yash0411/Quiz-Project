@@ -23,7 +23,9 @@ import AssignmentsDetail from './AssignmentsDetail';
 
 class Main extends Component {
 
-  
+    componentDidMount(){
+        document.title = "Quiz App"
+      }
 
 
     render(){

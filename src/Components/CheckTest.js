@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {Button } from 'reactstrap';
 import {Grid,Container} from '@material-ui/core';
 import {Link} from 'react-router-dom';
-import Question from './question';
 import {questions} from '../data/tests';
 import './testpage.css' ;
 

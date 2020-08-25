@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Row,  Col,Button, CardText, CardBody, CardLink,CardImg  } from 'reactstrap';
-import {Grid,Container,Card, Box,Checkbox,Tabs, Tab} from '@material-ui/core';
+import { Button} from 'reactstrap';
+import {Grid,Container, Box} from '@material-ui/core';
 import {Link} from 'react-router-dom';
-import CircleCheckedFilled from '@material-ui/icons/CheckCircle';
-import CircleUnchecked from '@material-ui/icons/RadioButtonUnchecked';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -152,7 +150,7 @@ class SubTopic extends Component {
                         <li>Sorting Option for all master registration</li>
                         <img src={require("../imgs//portfolio-1.jpg")} height="100px" ></img>
                         <li>Sorting Option for all master registration</li>
-                        <img src={require("../imgs//portfolio-1.jpg")} height="100px" ></img>
+                        <img src={require("../imgs//portfolio-1.jpg")} height="100px" alt="Image here"></img>
                     </ol>
                     
 
@@ -166,9 +164,9 @@ class SubTopic extends Component {
                         <li>Sorting Option for all master registration</li>
                         <li>Sorting Option for all master registration</li>
                         <li>Sorting Option for all master registration</li>
-                        <img src={require("../imgs//portfolio-1.jpg")} height="100px" ></img>
+                        <img src={require("../imgs//portfolio-1.jpg")} height="100px" alt="Image here" ></img>
                         <li>Sorting Option for all master registration</li>
-                        <img src={require("../imgs//portfolio-1.jpg")} height="100px" ></img>
+                        <img src={require("../imgs//portfolio-1.jpg")} height="100px" alt="Image here" ></img>
                     </ol>
                     
 

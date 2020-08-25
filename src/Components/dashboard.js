@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Container, Col,Button,Progress  } from 'reactstrap';
 import {Grid,Box,Card,Typography,CardContent} from '@material-ui/core';
-import {SwipeableTemporaryDrawer} from './Drawer';
 import {Link} from 'react-router-dom';
 import './dashboard.css' ;
 import Drawer from './Drawer';

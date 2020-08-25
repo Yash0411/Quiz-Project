@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { Row,  Col,Button, CardText, CardBody, CardLink,CardImg,Progress  } from 'reactstrap';
-import {Grid,Container,Card, Box,Checkbox} from '@material-ui/core';
+import {Col,Button,Progress  } from 'reactstrap';
+import {Grid,Container, Box} from '@material-ui/core';
 import {Link} from 'react-router-dom';
 import './Leaderboard.css' ;
-import CircleCheckedFilled from '@material-ui/icons/CheckCircle';
-import CircleUnchecked from '@material-ui/icons/RadioButtonUnchecked';
 import { ranklist } from '../data/ranklist';
 
 
@@ -27,7 +25,7 @@ class Leaderboard extends Component {
                 <Grid container alignItems='center' item  xs={12}>
                     <Grid item xs={2} md={1} className='rankgrid'>
                         { this.state.ranklist.indexOf(student)<3 ?
-                            <img src={require(`../imgs/medal${this.state.ranklist.indexOf(student)}.jpg`)} className='medals'/>                            
+                            <img src={require(`../imgs/medal${this.state.ranklist.indexOf(student)}.jpg`)} className='medals'  alt="Image here"/>                            
                             :
                             <Button className='rank'>
                                 {this.state.ranklist.indexOf(student)+1}
@@ -90,7 +88,7 @@ class Leaderboard extends Component {
                 >
                     <Box  alignSelf="flex-end" flexDirection='column' style={{margin:'10px'}}>
                         <Box>
-                            <img src={require('../imgs/crown.jpg')} height='50px'/>
+                            <img src={require('../imgs/crown.jpg')} height='50px' alt="Image here"/>
                         </Box>
                         <Box style={{fontSize:'x-small'}}>
                             Name Of Student
@@ -98,7 +96,7 @@ class Leaderboard extends Component {
                     </Box>
                     <Box  flexDirection='column' style={{margin:'10px'}}>
                         <Box>
-                            <img src={require('../imgs/crown.jpg')} height='50px' />
+                            <img src={require('../imgs/crown.jpg')} height='50px' alt="Image here" />
                         </Box>
                         <Box style={{fontSize:'x-small'}}>
                             Name Of Student
@@ -106,7 +104,7 @@ class Leaderboard extends Component {
                     </Box>
                     <Box alignSelf="flex-end" flexDirection='column' style={{margin:'10px'}}>
                         <Box>
-                            <img src={require('../imgs/crown.jpg')} height='50px'/>
+                            <img src={require('../imgs/crown.jpg')} height='50px' alt="Image here"/>
                         </Box>
                         <Box style={{fontSize:'x-small'}}>
                             Name Of Student

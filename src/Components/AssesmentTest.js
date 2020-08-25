@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Button, Card } from 'reactstrap';
-import {Grid,Container, Typography,Checkbox,Box,Accordion,AccordionSummary,AccordionDetails} from '@material-ui/core';
+import {Grid,Container, Checkbox,Box,Accordion,AccordionSummary,AccordionDetails} from '@material-ui/core';
 import {Link} from 'react-router-dom';
 import './AssesmentTest.css' ;
 import CircleCheckedFilled from '@material-ui/icons/CheckCircle';
@@ -34,7 +34,7 @@ class AssmentTest extends Component {
                             </Grid>
                             <Grid  container spacing={1} xs={11}  className='assesmentcard1'> 
                                 <Grid item >
-                                    <img src={require("../imgs/pc.PNG")} className="cardimg shadow" height={window.innerWidth/7} style={{maxHeight:'103px',borderRadius:'7px'}} ></img>
+                                    <img src={require("../imgs/pc.PNG")} alt="Image here" className="cardimg shadow" height={window.innerWidth/7} style={{maxHeight:'103px',borderRadius:'7px'}} ></img>
                                 </Grid>
 
                                 <Grid item xs={8} md={9} style={{height:'100%'}} justify="space-between" >
@@ -115,7 +115,7 @@ class AssmentTest extends Component {
                             </Grid>
                             <Grid  container spacing={1} xs={11}  className='assesmentcard1'> 
                                 <Grid item >
-                                    <img src={require("../imgs/pc.PNG")} className="cardimg" height={window.innerWidth/7} style={{maxHeight:'103px'}} ></img>
+                                    <img src={require("../imgs/pc.PNG")} alt="Image here" className="cardimg" height={window.innerWidth/7} style={{maxHeight:'103px'}} ></img>
                                 </Grid>
 
                                 <Grid item xs={8} md={9} style={{height:'100%'}} justify="space-between" >
@@ -219,7 +219,7 @@ class AssmentTest extends Component {
                            
                         </div>
                         <div>
-                            <img src={require('../imgs/assesmenthead.png')} height='150px'></img>
+                            <img src={require('../imgs/assesmenthead.png')} alt="Image here" height='150px'></img>
                         </div>
                     </Grid>
                 </Grid>

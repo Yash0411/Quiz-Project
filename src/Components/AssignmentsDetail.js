@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import {Button, Card } from 'reactstrap';
-import {Grid,Container, Typography,Checkbox,Box,Accordion,AccordionSummary,AccordionDetails} from '@material-ui/core';
+import {Grid,Container,Box} from '@material-ui/core';
 import {Link} from 'react-router-dom';
 import './AssignmentsDetail.css' ;
-import CircleCheckedFilled from '@material-ui/icons/CheckCircle';
 import {practicetests,chaptertests} from '../data/alltests';
-import GetAppIcon from '@material-ui/icons/GetApp';
-import ShareIcon from '@material-ui/icons/Share';
 
 
 
@@ -33,7 +30,7 @@ class AssignmentsDetail extends Component {
                             </Grid>
                             <Grid  container spacing={1} xs={11}  className='assesmentcard1'> 
                                 <Grid item >
-                                    <img src={require("../imgs/Video.PNG")} className="cardimg shadow" height={window.innerWidth/7} style={{maxHeight:'103px',borderRadius:'4px'}} ></img>
+                                    <img src={require("../imgs/Video.PNG")} alt="Image here" className="cardimg shadow" height={window.innerWidth/7} style={{maxHeight:'103px',borderRadius:'4px'}} ></img>
                                 </Grid>
 
                                 <Grid item xs={8} md={9} style={{height:'100%'}} justify="space-between" >
@@ -68,7 +65,7 @@ class AssignmentsDetail extends Component {
                             </Grid>
                             <Grid  container spacing={1} xs={11}  className='assesmentcard1'> 
                                 <Grid item >
-                                    <img src={require("../imgs/pc.PNG")} className="cardimg shadow" height={window.innerWidth/7} style={{maxHeight:'103px',borderRadius:'4px'}} ></img>
+                                    <img src={require("../imgs/pc.PNG")} alt="Image here" className="cardimg shadow" height={window.innerWidth/7} style={{maxHeight:'103px',borderRadius:'4px'}} ></img>
                                 </Grid>
 
                                 <Grid item xs={8} md={9} style={{height:'100%'}} justify="space-between" >
@@ -103,7 +100,7 @@ class AssignmentsDetail extends Component {
                             </Grid>
                             <Grid  container spacing={1} xs={11}  className='assesmentcard1'> 
                                 <Grid item >
-                                    <img src={require("../imgs/desktop.PNG")} className="cardimg shadow" height={window.innerWidth/7} style={{maxHeight:'103px',borderRadius:'4px'}} ></img>
+                                    <img src={require("../imgs/desktop.PNG")} alt="Image here" className="cardimg shadow" height={window.innerWidth/7} style={{maxHeight:'103px',borderRadius:'4px'}} ></img>
                                 </Grid>
 
                                 <Grid item xs={8} md={9} style={{height:'100%'}} justify="space-between" >

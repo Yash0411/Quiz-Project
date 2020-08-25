@@ -128,7 +128,7 @@ class Subject extends Component {
         });
 
         const chapters1 =this.state.subjects.map((subject) => {
-            if (subject.diff==false){
+            if (subject.diff === false){
             return (
                 <Grid xs={5} md={3} sm={4} lg={2} className="sitem"> 
                 <Link to={`/subjectdetail/subtopic`} style={{textDecoration:'none',padding:'0'}} >
@@ -171,7 +171,7 @@ class Subject extends Component {
                 </Link>  
                 </Grid> 
             );}
-            else if (subject.diff==true){
+            else if (subject.diff===true){
                 return(
                     <Grid xs={5} md={3} sm={4} lg={2} className="sitem"> 
                         <Link to={`/subjectdetail/assesment`} style={{textDecoration:'none',padding:'0'}} >

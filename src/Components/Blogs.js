@@ -90,7 +90,7 @@ class Blogs extends Component {
                     <CardActionArea>
                         <img
                         src={require("../imgs/Blog.PNG")}
-                        title="Contemplative Reptile"
+                        alt="Image"
                         width="100%"
                         />
                         <CardContent style={{paddingTop:'5px'}}>

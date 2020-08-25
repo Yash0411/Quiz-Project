@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Progress} from 'reactstrap';
-import {Grid,Container,Box} from '@material-ui/core';
+import {Grid,Container} from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
@@ -82,40 +82,7 @@ class AnalyticsBoard extends Component {
 
 
     render(){
-
-        const chapters =this.state.articles.map((article) => {
-            return (
-                <Grid item xs={12} sm={6} md={4} lg={4} >
-                <Card style={{margin:'20px',textAlign:'left',borderRadius:'5px'}}>
-                    <CardActionArea>
-                        <img
-                        src={require("../imgs/Blog.PNG")}
-                        title="Contemplative Reptile"
-                        width="100%"
-                        />
-                        <CardContent style={{paddingTop:'5px'}}>
-                            <Grid container>
-                                <Grid item xs={12} className="info">
-                                    Tags will be shown here
-                                </Grid>
-                                <Grid item xs={12} className="blogdesc">
-                                    Title Of blog will come here and above is the feature image...
-                                </Grid>
-                                <Grid item xs={12} className="read">
-                                    5 minute read
-                                </Grid>
-                            </Grid>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-                </Grid>
-            );
-        });
-
-        
-
-
-        
+  
     return(
         <div>
         <div className="analyticsbg1">
@@ -148,7 +115,7 @@ class AnalyticsBoard extends Component {
                            
                         </div>
                         <div>
-                            <img src={require('../imgs/analyticsboardimg.PNG')} height='150px'></img>
+                            <img src={require('../imgs/analyticsboardimg.PNG')} alt="Image here" height='150px'></img>
                         </div>
                     </Grid>
                 </Grid>

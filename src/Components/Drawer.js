@@ -46,7 +46,7 @@ export default function SwipeableTemporaryDrawer() {
         >
         <Container className="sidebartop">
         <center>
-          <img src={require("../imgs/user.PNG")}/>
+          <img src={require("../imgs/user.PNG")} alt="User image here"/>
           <div className='qtext namesidebar'>Name Of The Student</div>
       <Grid >
         {['Class Of Student', 'Section', 'Branch', 'City Location'].map((text, index) => (

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Row,  Col,Button,Progress  } from 'reactstrap';
-import {Grid,Card,Typography,CardContent,Container, requirePropFactory} from '@material-ui/core';
+import {Button,Progress  } from 'reactstrap';
+import {Grid,Card,Typography,CardContent,Container} from '@material-ui/core';
 import {Link} from 'react-router-dom';
 import './Assignments.css';
-import { green, lightGreen } from '@material-ui/core/colors';
 
 
 
@@ -86,7 +85,7 @@ class Assignments extends Component {
 
     render(){
 
-        const assignmentsleft =this.state.subjects.filter(subject => this.state.subjects.indexOf(subject)%2==1).map((subject) => { 
+        const assignmentsleft =this.state.subjects.filter(subject => this.state.subjects.indexOf(subject)%2===1).map((subject) => { 
             return (
                 <Grid item xs={12} md={6} >
                         <Link to={`/assignments/assignmentdetails`} style={{ textDecoration: 'none' }}>
@@ -136,7 +135,7 @@ class Assignments extends Component {
                             </Grid>     
                             </CardContent>
                             <div  className="right" style={{height:'10px',paddingTop:'7px'}}>
-                                <img src={require("../imgs/calculator.PNG")} style={{}}/>
+                                <img src={require("../imgs/calculator.PNG")} alt="Image here"/>
                             </div>                  
                         </Card>
                         </Link>
@@ -144,7 +143,7 @@ class Assignments extends Component {
             );
         });
 
-        const assignmentsright =this.state.subjects.filter(subject => this.state.subjects.indexOf(subject)%2==0).map((subject) => { 
+        const assignmentsright =this.state.subjects.filter(subject => this.state.subjects.indexOf(subject)%2===0).map((subject) => { 
             return (
                 <Grid item xs={12} md={6} >
                         <Link to={`/subjectdetail`} style={{ textDecoration: 'none' }}>

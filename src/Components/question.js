@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button} from 'reactstrap';
 import {Grid} from '@material-ui/core';
-import {Link} from 'react-router-dom';
 
 
 const Question = (question) => {
