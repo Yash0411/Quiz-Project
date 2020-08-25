@@ -1,0 +1,23 @@
+.bgassignments{
+    background: linear-gradient( rgb(39, 159, 228) 2px,skyblue 10vh, whitesmoke 30vh);
+    min-height: 100vh;
+}
+.timetowork{
+    padding-top: 20px;
+    font-size: smaller;
+}
+.dateno{
+    font-size: large;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.datetext{
+    font-size: xx-small;    
+}
+.greatjob{
+    font-size: smaller;
+    font-weight: bold;
+}
+.cardbg{
+    background: linear-gradient(135deg,rgba(182, 0, 0, 0.842) 40%, rgba(206, 65, 65, 0.788) 90%);
+}

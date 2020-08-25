@@ -1,0 +1,18 @@
+.vidimg{
+    max-width: 100%;
+}
+.iconlsn{
+    text-align: center;
+}
+.subtopic{
+    line-height: 1.5;
+    font-weight: 500;
+}
+.min{
+    margin-top: 5%;
+}
+@media only screen and (max-width: 600px) {
+    .subtopic{
+        font-size: x-small  ;
+    }
+}

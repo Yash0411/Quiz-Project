@@ -1,0 +1,74 @@
+.backanalysis{
+    color: rgba(83, 157, 226, 0.781);    
+}
+.analysis{
+    color: rgb(2, 141, 255);
+}
+.analyticsbg1{
+   background:linear-gradient( rgba(83, 150, 226, 0.781) 5px, white 50%);
+   padding-bottom: 6vh;
+}
+.analyticsbg2{
+    background:linear-gradient( white 10%, rgba(83, 135, 226, 0.581) 90% );
+    background-image: url("../imgs/analysisbg2.PNG");
+    padding-bottom: 3vh;
+ }
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
+.center{
+    text-align:center;
+}
+.topanalytics{
+    font-size: smaller;
+    color: rgb(95, 95, 95);
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+}
+.textanalytics{
+    font-size: smaller;
+    color: rgb(180, 180, 180);
+    padding-bottom: 1.5rem;
+    font-weight: 500;
+    text-shadow: 1px;
+}
+.prog{
+    background: whitesmoke;
+}
+.bartop{
+    padding-bottom: 10px;
+}
+.white{
+    color: white;
+}
+.sub{
+    font-size: small;
+}
+.subject1{
+    padding-bottom: 10px;
+}
+.baravg{
+    padding-top: 3vh;
+}
+.whitesmoke{
+    background: whitesmoke;
+}
+hr{
+    border-top: 1px dotted violet;
+  }
+@media only screen and (max-width: 600px) {
+    .textanalytics{
+        font-size: x-small;
+    }
+    .topanalytics{       
+        font-size: 70%; 
+        padding-bottom: 1rem;
+    }
+    .subject1{
+        font-size: x-small;
+        padding-bottom: 00px;
+    }
+  }

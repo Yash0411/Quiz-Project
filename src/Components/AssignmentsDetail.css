@@ -1,0 +1,17 @@
+.assignmentdetailtop{
+    background: linear-gradient( rgb(2, 145, 38) 2px,rgb(166, 228, 109) 20vh, white 30vh);
+    min-height: 100vh ;
+}
+.green{
+    color: green;
+}
+.datenotop{
+    font-size: large;
+    font-weight: bold;
+    color: rgba(0, 128, 0, 0.534);
+    margin-top: 12px;
+}
+.datetexttop{
+    font-size: xx-small;    
+    color: rgba(0, 128, 0, 0.534);
+}

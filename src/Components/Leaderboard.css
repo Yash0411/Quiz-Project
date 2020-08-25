@@ -1,0 +1,36 @@
+.namestud{
+    font-size: xx-small;
+}
+.rank{
+    background: rgb(255, 253, 253);
+    text-align: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: 2px solid rgb(206, 206, 206);
+}
+.rankgrid{
+    text-align: center;
+}
+.ranklist{
+    background: rgb(255, 253, 253);
+    border-radius: 25px;
+    padding-left: 5%;
+    height: 50px;
+    font-size: small;
+    line-height: 1;
+}
+.medals{
+    height: 45px;
+}
+@media only screen and (max-width: 600px) {
+    .ranklist{
+        border-radius: 20px;
+        padding-left: 5%;
+        height: 35px;
+        font-size: x-small;
+    }
+    .medals{
+        height: 2.1rem;
+    }
+  }

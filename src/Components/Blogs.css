@@ -1,0 +1,17 @@
+.blogdesc{
+    font-weight: 600;
+    font-size: small;
+    padding-top: 6px;
+    line-height: 1.4;
+  }
+.read{
+    text-align: right;
+    font-size: smaller;
+    padding-top: 2px;
+}
+.blog{
+    color: rgb(2, 141, 255);
+}
+.blogbg{
+   background:linear-gradient( rgb(39, 137, 228) 2px,rgb(71, 197, 247) 10vh, white 82vh);
+}

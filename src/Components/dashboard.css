@@ -1,0 +1,90 @@
+.dashboard-btn{
+    color: white;
+}
+.btn1{
+    background: linear-gradient(90deg, rgb(7, 170, 89) 30%, rgb(109, 226, 55) 90%);
+    
+}
+.btn2 {
+    background: linear-gradient(90deg, rgb(40, 178, 241) 30%, rgb(110, 194, 233) 90%);
+}
+.sub{
+    font-size: 5px;
+}
+.welcome{
+    font-size: small;
+    font-weight: bold;
+}
+.s-name{
+    font-size: xx-large;
+    font-weight: 700;
+    color: rgb(132, 81, 190);
+}
+.btn3{
+    margin-top: 199px;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    font-size: small;
+    width: 9rem;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    font-weight: 500;
+}
+.btn4{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    font-size: x-large;
+    color: rgb(158, 158, 158);
+    margin-right: 10%;
+}
+.cont{
+    padding-top: 3rem;
+}
+.cont1{
+    padding-top: 8rem;
+}
+.backtest{
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    width: 28px;
+    height: 28px;
+    color: whitesmoke;
+}
+.subjects{
+    font-size: xx-large;
+    font-weight: 700;
+    color: rgb(200, 120, 81);
+}
+Typography{
+    font-size: small;
+}
+.back{
+    background: white;
+    border-radius: 50%;
+    border: none;
+    width: 28px;
+    height: 28px;
+    color: inherit;
+    color: orange;
+}
+.sidebartop{
+    background: rgb(249, 243, 252);
+    padding-top: 2rem;
+    color: rgb(81, 0, 128);
+    font-size: x-small;
+    padding-bottom: 1.2rem;
+}
+.sidebarbottom{
+    background: rgba(130, 72, 223, 0.541);
+    color: white;
+    font-size: x-small;
+    padding-bottom: 1.2rem;
+}
+.namesidebar{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

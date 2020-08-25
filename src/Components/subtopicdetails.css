@@ -1,0 +1,41 @@
+.cardbg{
+    background: linear-gradient(45deg, rgb(216, 54, 81) 10%, rgb(250, 229, 113) 80%);
+}
+.cardhead{
+    font-size: x-small;
+    color: white;
+    white-space: normal;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.cardbody2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 600;
+    color: rgb(53, 53, 53);
+}
+.topicons{
+    font-size: medium;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.589);
+    padding-right: 5px;
+}
+.icontext{
+    font-size: 7px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.contcol{
+    background-color:white;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+}
+ol{
+    font-weight: 500;
+    font-size: small;
+    line-height: 1.4;
+    color:rgb(100, 100, 100);
+}

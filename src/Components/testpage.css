@@ -1,0 +1,125 @@
+.appbar{
+    padding:1.5%;
+    font-size: x-large;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(51, 51, 51);
+}
+.timeleft{
+    font-size: x-small;
+    right: 0;
+    padding-top: 5px;
+}
+div.scrollmenu .snumber  {    
+    display: inline-block;
+    color: black;
+    padding: 24px 25px;
+    border: black;
+    font-size:medium;
+  }
+  div.scrollmenu .snumber:hover {
+    background-color: rgb(2, 85, 163,0.6);
+    color:white;
+  }
+  div.scrollmenu  .active {
+    background-color: rgb(2, 85, 163,0.6);
+    color:white;
+  }
+.scrollmenu1{
+    background: white;
+    font-weight: 600; 
+    padding: 0;
+}
+.q{    
+    box-shadow: black;
+    width: 35px;
+    height: 35px;
+    color: rgb(204, 204, 204);
+    box-shadow:  0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.bg{
+    background : whitesmoke;
+    min-height: 100vh;
+}
+.right{
+    text-align: right;
+}
+.b500{
+    font-weight: 500;
+    color: rgb(59, 59, 59);
+}
+.cont15{
+    margin-top:1.5rem;
+}
+.cont2{
+    margin-top: 2rem;
+}
+.cont1r{
+    margin-top: 1rem;
+}
+.question{
+    font-size: smaller;
+    color: rgb(158, 158, 158);
+}
+.marks{
+    font-size: smaller;
+    color: orange;
+}
+.qtext{
+    font-weight: 500;
+    color: rgb(39, 39, 39);
+    line-height: 1.8;
+}
+.ans{
+    font-weight: 500;
+    color: rgb(97, 97, 97);
+    line-height: 1.8;
+    font-size: small;
+}
+.option{
+    height: 38px;
+    width:  38px;
+    border-radius: 50%;
+    border: 5px solid #d4d4d4;
+    background: rgb(245, 244, 244)
+}
+.option.active{
+    border-color: rgb(0, 162, 255,0.65);
+    color: rgb(0, 162, 255,0.65);
+}
+.option.ans{
+    border-color: rgb(44, 206, 4);
+    color: rgb(44, 206, 4);
+}
+.submit{
+    background: white;
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(163, 163, 163);
+    font-size: small;
+    font-weight: 500;
+    text-shadow: 0.5px 0.5px rgb(102, 102, 102);
+}
+.qaddimg{
+    border: 1px dashed rgb(80, 80, 80);
+    border-radius: 8px;
+    height: 350px;
+}
+.solution{
+    padding-top: 15px;
+    background: rgb(247, 247, 247);
+}
+@media only screen and (max-width: 600px) {
+    .appbar{
+        padding:4%;
+        font-size: medium;
+    }
+    div.scrollmenu .snumber  {   
+        padding: 12px 16px;
+    }
+    .qtext{
+        font-size:14px;
+    }
+}

@@ -1,0 +1,116 @@
+
+.sub{
+    font-size: 5px;
+}
+.welcome{
+    font-size: small;
+    font-weight: bold;
+    color: white;
+}
+.s-name{
+    font-size: x-large;
+    font-weight: 700;
+    color: rgb(132, 81, 190);
+}
+.cont{
+    padding-top: 3rem;
+}
+.cont1{
+    padding-top: 5rem;
+}
+.backsub{
+    background: white;
+    border-radius: 50%;
+    border: none;
+    width: 28px;
+    height: 28px;
+    color: inherit;
+}
+.subjectname{
+    font-size: 180%;
+    font-weight: 700;
+    color: rgb(53, 78, 218);
+}
+.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu .sitem  {
+    display: inline-block;
+    color: white;
+    margin-right: 15px;
+    border-radius: 20px;
+   
+        box-shadow: 3px 5px 5px rgb(180, 180, 180);
+  }
+  
+  div.scrollmenu .sitem:hover {
+    background-color: #777;
+  }
+  .scrollmenu::-webkit-scrollbar {
+    height: 10px;
+  }
+  .scrollmenu {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.cardbody{
+    word-wrap: break-word;
+    white-space: normal;
+    margin-top: 5px;
+    font-size: small;
+    color: rgb(90, 90, 90);
+    font-weight: 500;
+}
+.cardbody1{
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: smaller;
+    color: rgb(168, 168, 168);
+    font-weight: 500;
+}
+.name{
+    color: rgb(36, 100, 240);
+    font-weight: 500;
+}
+.cardWrapper {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+.layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.cardbg1{
+    background: linear-gradient(45deg, rgb(216, 54, 81) 10%, rgb(250, 229, 113) 80%);
+}
+.cardhead{
+    font-size: x-small;
+    color: white;
+    white-space: normal;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.cardbody2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 600;
+    color: rgb(53, 53, 53);
+}
+.topicons{
+    font-size: medium;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.589);
+    padding-right: 5px;
+}
+.icontext{
+    font-size: 7px;
+    margin-top: 0;
+    padding-top: 0;
+}
