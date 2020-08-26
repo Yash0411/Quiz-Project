@@ -18,6 +18,14 @@ class AllSubjects extends Component {
                     exams:3,
                     sub:3,
                     progress:68,
+                    color1:'rgba(15, 141, 35, 0.751)',
+                    color2:'rgba(0, 221, 0)'
+                },{
+                    name:'HINDI',
+                     vid:12,
+                    exams:3,
+                    sub:3,
+                    progress:68,
                     color1:'rgb(40, 178, 241)',
                     color2:'rgb(110, 194, 233)'
                 },{
@@ -26,55 +34,47 @@ class AllSubjects extends Component {
                     exams:3,
                     sub:3,
                     progress:68,
-                    color1:'rgb(40, 178, 241)',
-                    color2:'rgb(110, 194, 233)'
-                },{
-                    name:'HINDI',
-                    vid:12,
-                    exams:3,
-                    sub:3,
-                    progress:68,
-                    color1:'rgb(40, 178, 241)',
-                    color2:'rgb(110, 194, 233)'
+                    color1:'rgb(177, 130, 238)',
+                    color2:'rgb(200, 130, 238,0.7)'
                 },{
                     name:'MATHEMATICS',
                     vid:12,
                     exams:3,
                     sub:3,
                     progress:68,
-                    color1:'rgb(40, 178, 241)',
-                    color2:'rgb(110, 194, 233)'
+                    color1:'rgb(255, 120, 143,0.9)',
+                    color2:'rgb(255, 215, 84,0.8)'
                 },{
                     name:'SCIENCE',
                     vid:12,
                     exams:3,
                     sub:3,
                     progress:68,
-                    color1:'rgb(40, 178, 241)',
-                    color2:'rgb(110, 194, 233)'
+                    color1:'rgba(172, 25, 0, 0.842)',
+                    color2:'rgba(206, 65, 65, 0.788)'
                 },{
                     name:'BIOLOGY',
                     vid:12,
                     exams:3,
                     sub:3,
                     progress:68,
-                    color1:'rgb(40, 178, 241)',
-                    color2:'rgb(110, 194, 233)'
+                    color1:'rgb(123, 206, 212)',
+                    color2:'rgb(144, 225, 248,0.9)'
                 },{
                     name:'SOCIAL',
                     vid:12,
                     exams:3,
                     sub:3,
                     progress:68,
-                    color1:'rgb(40, 178, 241)',
-                    color2:'rgb(110, 194, 233)'
+                    color1:'rgb(255, 123, 0)',
+                    color2:'rgb(255, 185, 120)'
                 },{
                     name:'GENERAL',
                     vid:12,
                     exams:3,
                     sub:3,
                     progress:68,
-                    color1:'rgb(40, 178, 241)',
+                    color1:'rgb(9, 147, 243)',
                     color2:'rgb(110, 194, 233)'
                 },
             ]
@@ -87,7 +87,7 @@ class AllSubjects extends Component {
         const subjects =this.state.subjects.map((subject) => {
             return (
                 <Grid item xs={6} md={3} >
-                        <Link to={`/subjectdetail`} style={{ textDecoration: 'none' }}>
+                        <Link to={`/subjectdetail/${subject.name}`} style={{ textDecoration: 'none' }}>
                         <Card  style={{borderRadius:"8px",background:`linear-gradient(90deg, ${subject.color1} 30%, ${subject.color2} 90%)`}}>
                             <CardContent className="dashboard-btn">
                                 <Typography  style={{fontWeight:'bold'}}>

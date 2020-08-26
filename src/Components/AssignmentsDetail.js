@@ -156,7 +156,7 @@ class AssignmentsDetail extends Component {
                         
                             <div className="welcome">2 Subjects | 3 Tests | 24mins read </div>
                            
-                           <div className="subjectname green" >MATHEMATICS</div>
+                           <div className="subjectname green" >{window.location.href.substr( window.location.href.lastIndexOf('/') + 1)}</div>
 
                            <div className="subjectname green" >
                             <Grid item container alignItems='center' className="right" justify="flex-end">

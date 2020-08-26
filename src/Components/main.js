@@ -36,19 +36,19 @@ class Main extends Component {
               <Route path='/login' component={Login} />
               <Route path='/dashboard' component={Dashboard}/>
               <Route path='/allsubjects' component={AllSubjects}/>
-              <Route exact path='/subjectdetail' component={Subject}/>
+              <Route exact path='/subjectdetail/:subject' component={Subject}/>
               <Route exact path='/Live Streaming' component={LiveStream}/>
               <Route exact path='/BlogPosts' component={Blogs}/>
               <Route exact path='/analytics' component={AnalyticsBoard}/>
-              <Route exact path='/subjectdetail/subtopic' component={SubTopic}/>
-              <Route exact path='/subjectdetail/lessons' component={Lessons}/>
-              <Route exact path='/subjectdetail/assesment' component={AssmentTest}/>
-              <Route exact path='/subjectdetail/assesment/test' component={Test}/>
-              <Route exact path='/subjectdetail/assesment/test/submitted' component={TestSubmitted}/>
-              <Route exact path='/subjectdetail/assesment/checktest' component={CheckTest}/>
-              <Route exact path='/subjectdetail/assesment/leaderboard' component={Leaderboard}/>
+              <Route exact path='/:subjectdetail/subtopic/:subtopicname' component={SubTopic}/>
+              <Route exact path='/:subjectdetail/lessons/:lessonname' component={Lessons}/>
+              <Route exact path='/:subjectdetail/assesment/:assessmentname' component={AssmentTest}/>
+              <Route exact path='/:subjectdetail/assesment/test' component={Test}/>
+              <Route exact path='/:subjectdetail/assesment/test/submitted' component={TestSubmitted}/>
+              <Route exact path='/:subjectdetail/assesment/checktest' component={CheckTest}/>
+              <Route exact path='/:subjectdetail/assesment/leaderboard' component={Leaderboard}/>
               <Route exact path='/assignments' component={Assignments}/>
-              <Route exact path='/assignments/assignmentdetails' component={AssignmentsDetail}/>
+              <Route exact path='/assignments/assignmentdetails/:subject' component={AssignmentsDetail}/>
               <Redirect to="/login" />
           </Switch>
             

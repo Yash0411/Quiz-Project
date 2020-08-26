@@ -69,7 +69,7 @@ class Lessons extends Component {
             <Container>
             <Grid container xs={12} className='cont1r' alignItems='center'>
                 <Grid item xs={8} className='qtext' >
-                    Name Of SubtopicWill Be shown here....
+                    {window.location.href.substr( window.location.href.lastIndexOf('/') + 1)}
                 </Grid>
                 <Grid item xs={2} className='iconlsn'>
                     <Box flexDirection="vertical"><GetAppIcon /> <div className="icontext">Download</div></Box>              

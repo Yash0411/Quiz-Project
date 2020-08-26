@@ -215,7 +215,7 @@ class AssmentTest extends Component {
                         <div>
                         
                            <div className="assesmenthead" >ASSESMENTS TESTS</div>
-                            <div className="welcome1">Name Of the Chapter </div>
+                            <div className="welcome1">{window.location.href.substr( window.location.href.lastIndexOf('/') + 1)} </div>
                            
                         </div>
                         <div>

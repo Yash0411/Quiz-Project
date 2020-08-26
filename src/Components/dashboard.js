@@ -73,7 +73,7 @@ class Dashboard extends Component {
             <Row>
             <Grid container spacing={3} xs={12} style={{margin:"0"}}>
                     <Grid md="2" xs=""></Grid>
-                    <Grid item xs={6} md={3} className="welcome">
+                    <Grid item xs={6} md={3} className="welcome1">
                         Welcome Back !
                     </Grid>
                     <Grid md="12" xs="2"></Grid>

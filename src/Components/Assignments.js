@@ -87,9 +87,9 @@ class Assignments extends Component {
 
         const assignmentsleft =this.state.subjects.filter(subject => this.state.subjects.indexOf(subject)%2===1).map((subject) => { 
             return (
-                <Grid item xs={12} md={6} >
-                        <Link to={`/assignments/assignmentdetails`} style={{ textDecoration: 'none' }}>
-                        <Card  style={{borderRadius:"8px",background:`linear-gradient(145deg, ${this.state.shade[ (this.state.subjects.indexOf(subject)+2)%4].dark} 60%, ${this.state.shade[ (this.state.subjects.indexOf(subject)+2)%4].light} 90%)`}}>
+                <Grid item xs={12} md={6} style={{padding:"7px 10px 20px 5px"}}>
+                        <Link to={`/assignments/assignmentdetails/${subject.name}`} style={{ textDecoration: 'none' }}>
+                        <Card  style={{borderRadius:"8px",paddingBottom:'15px',background:`linear-gradient(145deg, ${this.state.shade[ (this.state.subjects.indexOf(subject)+2)%4].dark} 60%, ${this.state.shade[ (this.state.subjects.indexOf(subject)+2)%4].light} 90%)`}}>
                             <CardContent className="dashboard-btn">
                                 <Typography  style={{fontWeight:'bold'}}>
                                     {subject.name}
@@ -134,10 +134,10 @@ class Assignments extends Component {
 
                             </Grid>     
                             </CardContent>
-                            <div  className="right" style={{height:'10px',paddingTop:'7px'}}>
+                        </Card>
+                            <div  className="right" style={{height:'10px',paddingTop:'7px',margin:' -40px -10px  15px'}}>
                                 <img src={require("../imgs/calculator.PNG")} alt="Image here"/>
                             </div>                  
-                        </Card>
                         </Link>
                     </Grid>
             );
@@ -145,9 +145,9 @@ class Assignments extends Component {
 
         const assignmentsright =this.state.subjects.filter(subject => this.state.subjects.indexOf(subject)%2===0).map((subject) => { 
             return (
-                <Grid item xs={12} md={6} >
-                        <Link to={`/subjectdetail`} style={{ textDecoration: 'none' }}>
-                        <Card  style={{borderRadius:"8px",background:`linear-gradient(145deg, ${this.state.shade[ this.state.subjects.indexOf(subject)%4].dark} 60%, ${this.state.shade[ this.state.subjects.indexOf(subject)%4].light} 90%)`}}>
+                <Grid item xs={12} md={6} style={{padding:"7px 10px 20px 5px"}}>
+                        <Link to={`/assignments/assignmentdetails/${subject.name}`} style={{ textDecoration: 'none' }}>
+                        <Card  style={{borderRadius:"8px",paddingBottom:'15px',background:`linear-gradient(145deg, ${this.state.shade[ this.state.subjects.indexOf(subject)%4].dark} 60%, ${this.state.shade[ this.state.subjects.indexOf(subject)%4].light} 90%)`}}>
                             <CardContent className="dashboard-btn">
                                 <Typography  style={{fontWeight:'bold'}}>
                                     {subject.name}
@@ -192,6 +192,9 @@ class Assignments extends Component {
                                 }                    
                             </CardContent>
                         </Card>
+                            <div  className="right" style={{height:'10px',paddingTop:'7px',margin:' -40px -10px  15px'}}>
+                                <img src={require("../imgs/calculator.PNG")} alt="Image here"/>
+                            </div>                  
                         </Link>
                     </Grid>
             );

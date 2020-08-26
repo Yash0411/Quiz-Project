@@ -13,66 +13,25 @@ class Subject extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            subjects:[
+            subject:window.location.href.substr( window.location.href.lastIndexOf('/') + 1),
+            subtopics:[
                 {
-                    name:'TELGU',
-                    vid:12,
-                    exams:3,
-                    sub:3,
-                    progress:68,
-                    color1:'rgb(40, 178, 241)',
-                    color2:'rgb(110, 194, 233)',
+                    name:'Subtopic1',
                     diff:false
                 },{
-                    name:'ENGLISH',
-                    vid:12,
-                    exams:3,
-                    sub:3,
-                    progress:68,
-                    color1:'rgb(40, 178, 241)',
-                    color2:'rgb(110, 194, 233)',
+                    name:'Subtopic2',
                     diff:true
                 },{
-                    name:'HINDI',
-                    vid:12,
-                    exams:3,
-                    sub:3,
-                    progress:68,
-                    color1:'rgb(40, 178, 241)',
-                    color2:'rgb(110, 194, 233)',
+                    name:'Subtopic3',
                     diff:true
                 },{
-                    name:'MATHEMATICS',
-                    vid:12,
-                    exams:3,
-                    sub:3,
-                    progress:68,
-                    color1:'rgb(40, 178, 241)',
-                    color2:'rgb(110, 194, 233)',
+                    name:'Subtopic4',
                 },{
-                    name:'SCIENCE',
-                    vid:12,
-                    exams:3,
-                    sub:3,
-                    progress:68,
-                    color1:'rgb(40, 178, 241)',
-                    color2:'rgb(110, 194, 233)',
+                    name:'Subtopic5',
                 },{
-                    name:'SCIENCE',
-                    vid:12,
-                    exams:3,
-                    sub:3,
-                    progress:68,
-                    color1:'rgb(40, 178, 241)',
-                    color2:'rgb(110, 194, 233)',
+                    name:'Subtopic6',
                 },{
-                    name:'SCIENCE',
-                    vid:12,
-                    exams:3,
-                    sub:3,
-                    progress:68,
-                    color1:'rgb(40, 178, 241)',
-                    color2:'rgb(110, 194, 233)',
+                    name:'Subtopic7',
                 },
             ]
         };
@@ -82,10 +41,10 @@ class Subject extends Component {
 
     render(){
 
-        const chapters =this.state.subjects.map((subject) => {
+        const chapters =this.state.subtopics.map((subtopic) => {
             return (
                 <Grid xs={5} md={3} sm={4} lg={2} className="sitem"> 
-                <Link to = "/subjectdetail/lessons" style={{textDecoration:'none',padding:'0'}} >
+                <Link to = {`/${this.state.subject}/lessons/${subtopic.name}`} style={{textDecoration:'none',padding:'0'}} >
                     <Card style={{borderRadius:'7px'}}>
                         <div className="cardWrapper">
                             <CardImg height={window.innerHeight/6} width="100%" src={require("../imgs/desktop.PNG")} alt="Card image cap" />
@@ -127,11 +86,11 @@ class Subject extends Component {
             );
         });
 
-        const chapters1 =this.state.subjects.map((subject) => {
-            if (subject.diff === false){
+        const chapters1 =this.state.subtopics.map((subtopic) => {
+            if (subtopic.diff === false){
             return (
                 <Grid xs={5} md={3} sm={4} lg={2} className="sitem"> 
-                <Link to={`/subjectdetail/subtopic`} style={{textDecoration:'none',padding:'0'}} >
+                <Link to={`/${this.state.subject}/subtopic/${subtopic.name}`} style={{textDecoration:'none',padding:'0'}} >
                     <Card style={{borderRadius:'7px'}}>
                         <div className="cardWrapper">
                             <CardImg height={window.innerHeight/6} width="100%" src={require("../imgs/desktop.PNG")} alt="Card image cap" />
@@ -171,10 +130,10 @@ class Subject extends Component {
                 </Link>  
                 </Grid> 
             );}
-            else if (subject.diff===true){
+            else if (subtopic.diff===true){
                 return(
                     <Grid xs={5} md={3} sm={4} lg={2} className="sitem"> 
-                        <Link to={`/subjectdetail/assesment`} style={{textDecoration:'none',padding:'0'}} >
+                        <Link to={`/${this.state.subject}/assesment/${subtopic.name}`} style={{textDecoration:'none',padding:'0'}} >
                             <Card className="cardbg1" style={{borderRadius:'7px'}} >
                                 <Container>
                                     <CardText className="cardhead">4 Tests | 120 Questions
@@ -226,7 +185,7 @@ class Subject extends Component {
                         
                         <div className="welcome">12 Chapters | 88 hrs </div>
                            
-                           <div className="subjectname" >SUBJECT NAME</div>
+                           <div className="subjectname" >{this.state.subject}</div>
                         </div>
                     </Grid>
                 </Grid>

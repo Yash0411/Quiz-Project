@@ -114,7 +114,7 @@ class SubTopic extends Component {
                             <Grid item xs={8}>
                                 <IconButton edge="start" color="inherit" aria-label="menu" >
                                     <Typography type="title"  variant="body1" color="inherit" style={{fontWeight:'600',paddingTop:'2.5%',color:'rgba(0, 0, 0, 0.589)'}}>
-                                        Name Of Subtopic Will be here
+                                    {window.location.href.substr( window.location.href.lastIndexOf('/') + 1)}
                                     </Typography>
                                 </IconButton>
                             </Grid>
