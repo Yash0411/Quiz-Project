@@ -15,11 +15,17 @@ class Test extends Component {
         this.state = {
             questions:questions,
             selected :0,
+            answers : [],
             num : [1,2,3,4,5,6,7,8,9,10,11]
         };
+        this.addans = this.addans.bind(this);
     }
 
-
+    addans(answer) {
+        this.state.answers.push(answer);
+        this.setState ( {selected:(this.state.selected+1)%(this.state.num.length)} );
+        console.log(this.state.answers)
+    }
 
     render(){
 
@@ -61,7 +67,7 @@ class Test extends Component {
                         <Grid item xs={2}
                             container
                             spacing={0}      >
-                            <Link to="/subjectdetail/assesment"><Button className='back' style={{color:'red',fontSize:'x-small'}}>
+                            <Link to = {`/subjectdetail/assesment/${window.location.href.substr( window.location.href.lastIndexOf('/') + 1)}`}><Button className='back' style={{color:'red',fontSize:'x-small'}}>
                             <i class="fa fa-chevron-left fa-lg" ></i>
                             </Button>
                             </Link>
@@ -124,7 +130,7 @@ class Test extends Component {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Question question={this.state.questions[this.state.selected]}/>
+                    <Question question={this.state.questions[this.state.selected]} addans={this.addans} />
                 <Grid className='cont1' style={{textAlign:'right'}}>
                     <Link to='/subjectdetail/assesment/test/submitted'><Button className='submit'>Submit</Button></Link>
                 </Grid>

@@ -6,7 +6,7 @@ import Dashboard from './dashboard';
 import AllSubjects from './allsubjects';
 import Subject from './subjectdetail';
 import SubTopic from './subtopicdetails';
-import AssmentTest from './AssesmentTest';
+import AllQuiz from './allquiz';
 import Test from './testpage';
 import TestSubmitted from './testsubmitted';
 import CheckTest from './CheckTest';
@@ -21,7 +21,7 @@ import AssignmentsDetail from './AssignmentsDetail';
 
 
 
-class Main extends Component {
+class Main1 extends Component {
 
     componentDidMount(){
         document.title = "Quiz App"
@@ -34,15 +34,7 @@ class Main extends Component {
 
             <Switch>
               <Route path='/login' component={Login} />
-              <Route path='/dashboard' component={Dashboard}/>
-              <Route path='/allsubjects' component={AllSubjects}/>
-              <Route exact path='/subjectdetail/:subject' component={Subject}/>
-              <Route exact path='/Live Streaming' component={LiveStream}/>
-              <Route exact path='/BlogPosts' component={Blogs}/>
-              <Route exact path='/analytics' component={AnalyticsBoard}/>
-              <Route exact path='/:subjectdetail/subtopic/:subtopicname' component={SubTopic}/>
-              <Route exact path='/:subjectdetail/lessons/:lessonname' component={Lessons}/>
-              <Route exact path='/subjectdetail/assesment/:subtopic' component={AssmentTest}/>
+              <Route exact path='/allquizes' component={AllQuiz}/>
               <Route exact path='/:subjectdetail/assesment/:subtopic/test' component={Test}/>
               <Route exact path='/:subjectdetail/assesment/test/submitted' component={TestSubmitted}/>
               <Route exact path='/:subjectdetail/assesment/:subtopic/checktest' component={CheckTest}/>
@@ -58,4 +50,4 @@ class Main extends Component {
     }
 }
 
-export default Main;
+export default Main1;

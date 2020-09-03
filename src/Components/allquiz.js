@@ -8,7 +8,7 @@ import {practicetests,chaptertests} from '../data/alltests';
 
 
 
-class AssmentTest extends Component {
+class AllQuiz extends Component {
 
     constructor(props) {
         super(props);
@@ -245,4 +245,4 @@ class AssmentTest extends Component {
 
 
 
-export default AssmentTest;
+export default AllQuiz;

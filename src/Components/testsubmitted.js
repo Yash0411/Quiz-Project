@@ -65,7 +65,7 @@ class TestSubmitted extends Component {
                 </Grid>
 
                 <Grid className='cont2 qtext'>                   
-                    <Link to="/subjectdetail/assesment/checktest"><Button className='check'>
+                    <Link to = {`/subjectdetail/assesment/${window.location.href.substr( window.location.href.lastIndexOf('/') + 1)}/checktest`}><Button className='check'>
                         Check Your Answers
                     </Button>
                     </Link>
@@ -78,7 +78,7 @@ class TestSubmitted extends Component {
 
 
                 <Grid className='cont1' style={{textAlign:'right'}}>
-                    <Link to='/subjectdetail/assesment/'><Button className='submit'>Home</Button></Link>
+                    <Link to = {`/subjectdetail/assesment/${window.location.href.substr( window.location.href.lastIndexOf('/') + 1)}`}><Button className='submit'>Home</Button></Link>
                 </Grid>
             </Container>
 

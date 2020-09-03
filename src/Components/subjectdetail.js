@@ -133,7 +133,7 @@ class Subject extends Component {
             else if (subtopic.diff===true){
                 return(
                     <Grid xs={5} md={3} sm={4} lg={2} className="sitem"> 
-                        <Link to={`/${this.state.subject}/assesment/${subtopic.name}`} style={{textDecoration:'none',padding:'0'}} >
+                        <Link to={`/subjectdetail/assesment/${subtopic.name}`} style={{textDecoration:'none',padding:'0'}} >
                             <Card className="cardbg1" style={{borderRadius:'7px'}} >
                                 <Container>
                                     <CardText className="cardhead">4 Tests | 120 Questions

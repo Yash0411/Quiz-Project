@@ -71,7 +71,7 @@ class Login extends Component {
                         <Box>
                         <Col xs="6" sm="6" md="5" lg="3">
                             <Link
-                            to ='/dashboard'
+                            to ='/allquizes'
                             onClick={this.onSubmit}    
                             style={{
                                 textDecoration:'none'}}                    

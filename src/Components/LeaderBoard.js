@@ -63,7 +63,7 @@ class Leaderboard extends Component {
                         <Grid item xs={2}
                             container
                             spacing={0}      >
-                            <Link to="/subjectdetail/assesment"><Button className='back' style={{color:'red',fontSize:'x-small'}}>
+                            <Link  to={`/subjectdetail/assesment/${window.location.href.substr( window.location.href.lastIndexOf('/') + 1)}`}><Button className='back' style={{color:'red',fontSize:'x-small'}}>
                             <i class="fa fa-chevron-left fa-lg" ></i>
                             </Button>
                             </Link>

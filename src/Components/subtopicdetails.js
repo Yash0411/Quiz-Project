@@ -103,7 +103,7 @@ class SubTopic extends Component {
                             
                             <Grid item xs={1}>
                                 <IconButton edge="start" color="inherit" aria-label="menu">
-                                    <Link to='/subjectdetail'>
+                                    <Link to={`/subjectdetail/${window.location.href.substr( window.location.href.lastIndexOf('/') + 1)}`}>
                                         <Button className='backsub' style={{color:'red'}} >
                                             <i class='fa fa-chevron-left fa-lg' ></i>
                                         </Button>
