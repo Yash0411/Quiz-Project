@@ -17,6 +17,7 @@ import Blogs from './Blogs'
 import AnalyticsBoard from './AnalyticsBoad';
 import Assignments from './Assignments';
 import AssignmentsDetail from './AssignmentsDetail';
+import Test1 from './Test1';
 
 
 
@@ -35,12 +36,10 @@ class Main1 extends Component {
             <Switch>
               <Route path='/login' component={Login} />
               <Route exact path='/allquizes' component={AllQuiz}/>
-              <Route exact path='/:subjectdetail/assesment/:subtopic/test' component={Test}/>
-              <Route exact path='/:subjectdetail/assesment/test/submitted' component={TestSubmitted}/>
-              <Route exact path='/:subjectdetail/assesment/:subtopic/checktest' component={CheckTest}/>
-              <Route exact path='/:subjectdetail/assesment/test/leaderboard' component={Leaderboard}/>
-              <Route exact path='/assignments' component={Assignments}/>
-              <Route exact path='/assignments/assignmentdetails/:subject' component={AssignmentsDetail}/>
+              <Route exact path='/allquizes/0' component={Test1}/>
+              <Route exact path='/allquizes/1' component={Test}/>
+              <Route exact path='/allquizes/0/submitted' component={TestSubmitted}/>
+              <Route exact path='/allquizes/1/leaderboard' component={Leaderboard}/>
               <Redirect to="/login" />
           </Switch>
             
